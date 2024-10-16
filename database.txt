@@ -1,0 +1,50 @@
+database:medbazzar
+categories
+----------
+categoryid int  pk ai
+categoryname varchar(100)
+categoryicon  text
+
+
+
+subcategory
+-----------  
+categoryid, subcategoryid, subcategoryname, picture
+
+brands
+------
+brandid in pk ai
+brandname varchar(100)
+brandicon
+
+products
+--------
+categoryid fk DD
+subcategory fk DD
+brandid fk DD
+productid pk ai
+productname
+description
+picture
+
+
+
+
+
+productdetails
+---------------
+productdetailid pk
+categoryid fk
+subcategoryid fk
+brandid fk
+productid fk
+productsubname 
+weight
+weighttype DD
+type DD
+packaging DD
+qty
+price
+offerprice
+offertype DD
+picture
